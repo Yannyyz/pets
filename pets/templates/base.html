@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        {% block front %}
+		<meta charset="utf-8">
+		<title>Pets</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="{{ url_for('static', filename='img/favicon.ico')}}">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/homepage.css')}}"/>
+		{% endblock %}
+	</head>
+	<body>
+		<div class="header">
+			<a href="#" class="logo">Homepage</a>
+			<ul class="navigation">
+				<li><a href="{{ url_for('hello')}}">Home</a></li>
+				<li><a href="{{ url_for('details')}}">Details</a></li>
+				<li><a href="{{ url_for('upload')}}">Upload</a></li>
+			</ul>
+		</div>
+		<div class="bac">
+			<img src="{{ url_for('static', filename='img/table6.jpg')}}" />
+		</div>
+		{% block main %}{% endblock %}
+	</body>
+</html>
