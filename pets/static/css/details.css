@@ -8,6 +8,7 @@
 	left: 5%;
 	z-index: 200;
 	overflow: hidden;
+	background-color: rgba(0,0,0,0);
 }
 .show-nav{
 	position: absolute;
